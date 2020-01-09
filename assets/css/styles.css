@@ -221,7 +221,7 @@
 }
 
 .slider .ss1 {
-  background: url(../images/main_slider01.jpg) no-repeat center center;
+  background: url(../images/main_slider02_2000.jpg) no-repeat center center;
   background-size: cover;
 }
 .slider .ss2 {
@@ -231,6 +231,35 @@
 .slider .ss3 {
   background: url(../images/main_slider03_2000.jpg) no-repeat center center;
   background-size: cover;
+}
+
+.slider .swiper-slide h2 {
+  display: inline-block;
+  position: relative;
+  line-height: 65px;
+  font-size: 62px;
+  color: #fff;
+  margin-top: 200px;
+}
+
+.slider .swiper-slide h2::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+}
+.slider .swiper-slide em {
+  display: block;
+  font-size: 59px;
+  font-weight: 100;
+}
+.slider .swiper-slide p {
+  font-size: 27px;
+  color: #fff;
+  padding-top: 35px;
 }
 
 /* 미디어 쿼리 */
@@ -281,10 +310,38 @@
   .row {
     padding: 0 24px;
   }
+  .banner_menu .bm_left ul,
+  .banner_menu .bm_right ul:first-child {
+    display: none;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
 }
 
 /* 0 ~ 960px */
 @media (max-width: 960px) {
+  .slider {
+    height: 500px;
+  }
+  .slider .swiper-slide h2 {
+    margin-top: 160px;
+    font-size: 37px;
+    line-height: 45px;
+  }
+  .slider .swiper-slide h2::after {
+    bottom: -25px;
+  }
+  .slider .swiper-slide em {
+    font-size: 34px;
+  }
+
+  .slider .swiper-slide p {
+    font-size: 16px;
+    padding-top: 35px;
+  }
 }
 
 /* 0 ~ 768px */
@@ -300,6 +357,48 @@
   }
   .header h1 strong {
     display: none;
+  }
+}
+
+/* 0 ~ 600px */
+@media (max-width: 600px) {
+  .slider {
+    height: 400px;
+  }
+  .slider .swiper-slide h2 {
+    margin-top: 140px;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .slider .swiper-slide h2::after {
+    bottom: -15px;
+  }
+  .slider .swiper-slide em {
+    font-size: 20px;
+  }
+
+  .slider .swiper-slide p {
+    font-size: 14px;
+    padding-top: 25px;
+  }
+
+  .banner_menu {
+    top: 16px;
+  }
+  .banner_menu .bm_right li.white a,
+  .banner_menu .bm_right li.purple a {
+    font-size: 14px;
+    width: 80px;
+
+    padding: 3px 5px 5px 5px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border-color: white;
+  }
+
+  .swiper-pagination-bullet {
+    width: 13px !important;
+    height: 13px !important;
   }
 }
 
