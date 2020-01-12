@@ -20,6 +20,19 @@
   position: relative;
 }
 
+#movie {
+  background-color: #f8f8f8;
+}
+
+#event {
+}
+
+#opening {
+  margin: 17px 0;
+  background: url(../images/bg01.jpg) no-repeat center top;
+  background-size: cover;
+}
+
 /* 가운데 영역 */
 
 .container {
@@ -262,8 +275,6 @@
   color: #fff;
   padding-top: 35px;
 }
-
-/* 구직활동보고서 1월 10일 공부 시작 */
 /* 무비 */
 .movie {
   padding: 100px 0;
@@ -419,6 +430,116 @@
   margin-right: 0;
 }
 
+/* 구직활동보고서 1월 12일 공부 시작 */
+
+/* 이벤트 */
+
+.event {
+  overflow: hidden;
+  padding: 100px 0;
+}
+.event img {
+  display: block;
+}
+.event h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.event .event_left {
+  overflow: hidden;
+  float: left;
+  width: 66%;
+  margin-right: 2%;
+}
+.event .event_left .event_box1 {
+  float: left;
+  width: 50%;
+}
+.event .event_left .event_box2 {
+  float: left;
+  width: 50%;
+}
+.event .event_right {
+  float: left;
+  width: 32%;
+}
+
+/* 오프닝 */
+
+.opening {
+  padding: 100px 0;
+  text-align: center;
+  color: #bb9b51;
+}
+
+.opening h2 {
+}
+
+.opening h2 .grand {
+  background-position: 0 -175px;
+  display: inline-block;
+  width: 330px;
+  height: 50px;
+}
+
+.opening .date {
+  background-position: 0 -225px;
+  display: inline-block;
+  width: 260px;
+  height: 45px;
+}
+
+.opening .desc {
+  font-size: 35px;
+  font-weight: 300;
+  padding-bottom: 20px;
+  background: url(../images/bar.png) no-repeat bottom center;
+  background-size: 100%;
+}
+
+.opening .open_box {
+  overflow: hidden;
+  padding: 20px 3% 0 3%;
+}
+
+.opening .open_box > div {
+  position: relative;
+  float: left;
+  width: 27.3333%;
+  margin: 4% 3% 0 3%;
+  border: 1px solid #3e4b44;
+  box-sizing: border-box;
+  padding: 50px 0 20px 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.opening .open_box > div h3 {
+  position: absolute;
+  left: 27.3333%;
+  top: -10px;
+  display: inline-block;
+  color: #fff;
+  border: 1px solid #6e3abb;
+  font-size: 19px;
+  padding: 10px 25px;
+  background-color: #351e62;
+}
+
+.opening .open_box > div p {
+  color: #fff;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.opening .open_box > div p em {
+  display: block;
+}
+
+.opening .open_box > div p strong {
+  display: block;
+}
+
 /* 미디어 쿼리 */
 /* 0 ~ 1280px */
 @media (max-width: 1300px) {
@@ -516,19 +637,21 @@
 
 /* 0 ~ 768px */
 @media (max-width: 768px) {
-  body {
+  body,
+  #movie {
     background: #d9d7e0;
   }
+
   #mNav {
     right: 6px;
   }
-  .row {
-    padding: 0 16px;
-  }
-  #movie .row {
+
+  #movie .row,
+  #event .row {
     background: #fff;
     margin: 24px;
     padding: 24px;
+    margin-bottom: 0;
   }
 
   #movie .ir_su {
@@ -598,6 +721,23 @@
     text-align: left;
   }
   .header h1 strong {
+    display: none;
+  }
+
+  .event {
+    background-color: #fff;
+    padding: 24px;
+  }
+  .event h2 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .event .event_left {
+    width: 100%;
+  }
+
+  .event .event_right {
     display: none;
   }
 }
@@ -735,6 +875,20 @@
 
   .movie_chart > div > div > div .info .info_btn a:last-child {
     display: none;
+  }
+
+  #event .row {
+    margin: 8px;
+    padding: 0 8px;
+  }
+
+  .event {
+    padding: 16px;
+  }
+
+  .event h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
   }
 }
 
