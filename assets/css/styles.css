@@ -472,6 +472,7 @@
 }
 
 .opening h2 {
+  margin-bottom: 15px;
 }
 
 .opening h2 .grand {
@@ -523,7 +524,7 @@
 
 .opening .open_box > div p {
   color: #fff;
-  font-size: 27px;
+  font-size: 23px;
   font-weight: 700;
   padding: 6% 0 10% 0;
 }
