@@ -430,8 +430,6 @@
   margin-right: 0;
 }
 
-/* 구직활동보고서 1월 12일 공부 시작 */
-
 /* 이벤트 */
 
 .event {
@@ -504,32 +502,30 @@
 }
 
 .opening .open_box > div {
-  position: relative;
   float: left;
   width: 27.3333%;
   margin: 4% 3% 0 3%;
   border: 1px solid #3e4b44;
   box-sizing: border-box;
-  padding: 50px 0 20px 0;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
 .opening .open_box > div h3 {
-  position: absolute;
-  left: 27.3333%;
-  top: -10px;
   display: inline-block;
   color: #fff;
   border: 1px solid #6e3abb;
   font-size: 19px;
+  font-weight: 300;
   padding: 10px 25px;
   background-color: #351e62;
+  margin-top: -24px;
 }
 
 .opening .open_box > div p {
   color: #fff;
-  font-size: 19px;
+  font-size: 27px;
   font-weight: 700;
+  padding: 6% 0 10% 0;
 }
 
 .opening .open_box > div p em {
@@ -539,6 +535,8 @@
 .opening .open_box > div p strong {
   display: block;
 }
+
+/* 구직활동보고서 1월 13일 공부 시작 */
 
 /* 미디어 쿼리 */
 /* 0 ~ 1280px */
