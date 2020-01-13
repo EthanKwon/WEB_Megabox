@@ -32,6 +32,8 @@
   background: url(../images/bg01.jpg) no-repeat center top;
   background-size: cover;
 }
+#new {
+}
 
 /* 가운데 영역 */
 
@@ -539,6 +541,49 @@
 
 /* 구직활동보고서 1월 13일 공부 시작 */
 
+.new {
+  padding: 100px 0;
+  position: relative;
+}
+.new h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.new .new_left {
+  height: 500px;
+  background: #ccc url(../images/new01.jpg) center center;
+  background-size: cover;
+  margin-right: 423px;
+  position: relative;
+}
+
+.new .new_left .play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 120px;
+  height: 120px;
+  transform: translate(-50%, -50%);
+}
+
+.new .new_left .play .st0 {
+  fill: #fff;
+  opacity: 0.3;
+}
+
+.new .new_left .play .st1 {
+  fill: #fff;
+}
+.new .new_right {
+  position: absolute;
+  right: 0;
+  top: 165px;
+  width: 400px;
+  height: 500px;
+  background: #f0f0f0;
+  float: left;
+}
 /* 미디어 쿼리 */
 /* 0 ~ 1280px */
 @media (max-width: 1300px) {
