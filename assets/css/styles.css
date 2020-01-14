@@ -539,8 +539,6 @@
   display: block;
 }
 
-/* 구직활동보고서 1월 13일 공부 시작 */
-
 .new {
   padding: 100px 0;
   position: relative;
@@ -707,6 +705,10 @@
   height: 350px;
 }
 
+.help article.help_box3 > div {
+  border: 0;
+}
+
 .help article h3 {
   font-size: 30px;
   font-weight: 500;
@@ -779,6 +781,87 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+/* 구직활동보고서 1월 14일 공부 시작 */
+
+/* 할인카드 */
+
+.card {
+  padding: 17px;
+}
+.card li {
+  border: 1px solid #d7d7d7;
+  padding: 17px;
+  margin-bottom: 17px;
+}
+.card li a {
+  position: relative;
+  height: 100px;
+  min-height: 102px;
+  box-sizing: border-box;
+}
+
+.card li a span {
+  position: absolute;
+}
+
+.card li a span img {
+  width: 105px;
+}
+
+.card li a strong {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  padding-left: 120px;
+  color: #777;
+}
+
+.card li a em {
+  display: block;
+  font-size: 14px;
+  font-weight: 100;
+  color: #777;
+  padding-left: 120px;
+}
+
+/* 고객센터 */
+.service {
+}
+.service ul {
+  overflow: hidden;
+}
+.service li {
+  float: left;
+  width: 50%;
+  height: 193px;
+  box-sizing: border-box;
+  border: 1px solid #d7d7d7;
+  text-align: center;
+}
+.service li:nth-child(1) {
+  border-right: 0;
+  border-bottom: 0;
+}
+.service li:nth-child(2) {
+  border-bottom: 0;
+}
+.service li:nth-child(3) {
+  border-right: 0;
+}
+.service li a {
+}
+.service li a span {
+  display: block;
+  width: 120px;
+  height: 120px;
+  margin: 20px auto 0 auto;
+  overflow: hidden;
+}
+
+.service li a strong {
+  font-weight: 700;
 }
 
 /* 미디어 쿼리 */
